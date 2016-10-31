@@ -1,6 +1,6 @@
 <h1>List of Photos</h1>
 
-<a href="http://localhost:3000/photos/new">Add a New Photo</a>
+<a href="/photos/new">Add a New Photo</a>
 
 <table>
   <tr>
@@ -17,13 +17,13 @@
       <%= photo.caption %>
     </td>
     <td>
-      <a href="http://localhost:3000/photos/<%= photo.id %>">Show</a>
+      <a href="/photos/<%= photo.id %>">Show</a>
     </td>
     <td>
-      <a href="http://localhost:3000/photos/<%= photo.id %>/edit">Edit</a>
+      <a href="/photos/<%= photo.id %>/edit">Edit</a>
     </td>
     <td>
-      <a href="http://localhost:3000/delete_photo/<%= photo.id %>">Delete</a>
+      <a href="/delete_photo/<%= photo.id %>">Delete</a>
     </td>
   </tr>
   <% end %>
